@@ -3,7 +3,7 @@
     <div>BASIC Learning is created by
       <a href="https://github.com/Ljojua15">GitHub</a>
       <div></div>
-      <p >GitLab</p>
+      <p (click)="openGit()">GitLab</p>
     <div></div>
       <a href="https://www.linkedin.com/in/lasha-jojua-602689229/">LinkedIn</a>
     </div>
@@ -19,4 +19,8 @@
         <a href="">Flexboxfroggy</a>
       </p>
   </div>
+  <div class="layouts-footer__image" (click)="openGit()" *ngIf="openGitLab" >
+    <img src="./assets/images/gitlab.png" alt="gitlab">
+  </div>
 </div>
+

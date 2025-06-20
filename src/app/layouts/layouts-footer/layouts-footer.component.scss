@@ -6,7 +6,10 @@
   width: 100%;
 }
 .layouts-footer{
-  padding: 10px;
+  margin: auto;
+  max-width: 1024px;
+  width: calc(100% - 20px);
+  padding: 20px;
   @include mixins.flex(center, space-between, row);
   &__left{
     @include mixins.flex(center, space-between, row);
@@ -18,7 +21,7 @@
       font-family: variables.$main-font;
       font-size: 14px;
       a, p{
-        margin: 10px;
+        margin: 4px;
         text-decoration: none;
         --tw-text-opacity: 1;
         color: rgb(139 92 246 / var(--tw-text-opacity, 1));
@@ -27,8 +30,8 @@
         cursor: pointer;
       }
       div{
-        width: 10px;
-        height: 10px;
+        width: 6px;
+        height: 6px;
         background-color: whitesmoke;
         border-radius: 50%;
       }
@@ -40,6 +43,8 @@
     font-size: 18px;
   }
   &__right{
+    margin: 4px;
+
     p{
       font-family: variables.$main-font;
       font-size: 14px;
@@ -48,6 +53,45 @@
         text-decoration: none;
         --tw-text-opacity: 1;
         color: rgb(139 92 246 / var(--tw-text-opacity, 1));
+      }
+    }
+  }
+  &__image{
+    @include mixins.overlay;
+    @include mixins.flex(center, center, row);
+    img{
+      margin: auto;
+    }
+  }
+  @include mixins.mobile{
+    padding: 6px;
+    @include mixins.flex(center, center, column);
+    &__image{
+      img{
+        width: 450px;
+        height: 210px;
+        background-size: contain;
+        margin: auto;
+      }
+    }
+  }
+  @media (max-width: 450px){
+    &__left{
+      div{
+        font-size: 12px;
+      }
+    }
+    &__right{
+      p{
+        font-size: 11px;
+      }
+    }
+    &__image{
+      img{
+        width: 375px;
+        height: 200px;
+        background-size: contain;
+        margin: auto;
       }
     }
   }
