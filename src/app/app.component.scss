@@ -16,6 +16,7 @@
   &__body{
     width: 100%;
     min-height: 84dvh;
+    @include mixins.flex(center,center,row);
   }
   &__footer{
     width: 100%;
