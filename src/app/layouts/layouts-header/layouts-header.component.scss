@@ -1,4 +1,6 @@
 @use 'assets/styles/mixins.scss';
+@use 'assets/styles/variables.scss';
+
 
 :host {
   display: block;
@@ -9,7 +11,7 @@
   width: 100%;
   height: 100%;
   @include mixins.flex(center, space-between, row);
-
+  position: relative;
   &__left {
     padding: 20px 24px;
     cursor: pointer;
@@ -18,10 +20,10 @@
 
     h2 {
       font-size: 24px;
-      color: wheat;
+      color: whitesmoke;
+      font-family: variables.$main-font;
     }
   }
-
   &__right {
     padding: 20px 24px;
     @include mixins.flex(center, center, row);
@@ -33,6 +35,7 @@
       cursor: pointer;
       color: white;
       position: relative;
+      font-family: variables.$main-font;
     }
 
     :hover {
@@ -48,6 +51,74 @@
         border-radius: 30px;
       }
     }
+  }
+  &__burger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    padding: 20px;
+    z-index: 10;
 
+    div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+  }
+
+  @include mixins.mobile{
+    &__right {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      background-color: #222;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      padding: 20px;
+      transform: translateY(-100%);
+      transition: transform 0.3s ease;
+      display: none;
+
+      &.open {
+        display: flex;
+        transform: translateY(0);
+      }
+
+      a {
+        padding: 10px 0;
+      }
+    }
+
+    &__burger {
+      display: flex;
+    }
+    &__view{
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      background-color: rgb(28 31 46 / var(--tw-bg-opacity, 1));
+      right: 0;
+      top: 80px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      @include mixins.flex(center, space-around, column);
+      a {
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+        color: white;
+        position: relative;
+        font-family: variables.$main-font;
+      }
+    }
   }
 }
+

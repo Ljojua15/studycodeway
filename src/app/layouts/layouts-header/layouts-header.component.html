@@ -3,9 +3,18 @@
     <img src="./assets/images/logo.png" alt="logo">
     <h2>StudyCodeWay</h2>
   </div>
-  <div class="layouts-header__right">
-    <a href="#">Flexbox Exercises</a>
-    <a href="#">Grid Exercises</a>
-    <a href="#">Documentations</a>
-  </div>
+  @if (isMobile()) {
+    <div class="layouts-header__burger" (click)="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="layouts-header__view" *ngIf="menuOpen">
+      <a (click)="toggleMenu()" *ngFor="let routes of headerRoutes " [href]="routes.route">{{routes.name}}</a>
+    </div>
+  }@else{
+    <div class="layouts-header__right">
+      <a *ngFor="let routes of headerRoutes " [href]="routes.route">{{routes.name}}</a>
+    </div>
+  }
 </div>

@@ -15,14 +15,14 @@
   }
   &__body{
     width: 100%;
-    height: 80dvh;
+    min-height: 80dvh;
   }
   &__footer{
     width: 100%;
-    height: 10dvh;
     --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
     background-color: rgb(28 31 46 / var(--tw-bg-opacity, 1));
+    @include mixins.flex(center,center,row);
   }
 }
