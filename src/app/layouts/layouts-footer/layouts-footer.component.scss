@@ -25,7 +25,9 @@
         text-decoration: none;
         --tw-text-opacity: 1;
         color: rgb(139 92 246 / var(--tw-text-opacity, 1));
-      }
+      }:hover{
+      color: green;
+             }
       p{
         cursor: pointer;
       }
@@ -44,7 +46,6 @@
   }
   &__right{
     margin: 4px;
-
     p{
       font-family: variables.$main-font;
       font-size: 14px;
@@ -53,7 +54,9 @@
         text-decoration: none;
         --tw-text-opacity: 1;
         color: rgb(139 92 246 / var(--tw-text-opacity, 1));
-      }
+      }:hover{
+         color: green;
+       }
     }
   }
   &__image{
