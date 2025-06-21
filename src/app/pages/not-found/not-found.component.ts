@@ -1,4 +1,4 @@
-import {AfterViewChecked, AfterViewInit, Component, OnDestroy, ViewChild} from '@angular/core';
+import { Component, OnDestroy, ViewChild} from '@angular/core';
 import {LottieComponent} from 'ngx-lottie';
 
 @Component({
