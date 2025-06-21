@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {AfterViewChecked, AfterViewInit, Component, OnDestroy, ViewChild} from '@angular/core';
 import {LottieComponent} from 'ngx-lottie';
 
 @Component({
@@ -8,10 +8,23 @@ import {LottieComponent} from 'ngx-lottie';
   styleUrl: './not-found.component.scss',
   imports: [ LottieComponent]
 })
-export class NotFoundComponent {
+export class NotFoundComponent implements OnDestroy {
   lottieOptions = {
     path: 'assets/images/lottie/not-found.json',
     autoplay: true,
     loop: true
   };
+
+  @ViewChild('lottie', { static: true }) lottieRef!: LottieComponent;
+
+
+  ngOnDestroy(): void {
+
+    (this.lottieRef as any).animationItem?.destroy();
+    console.log(this.lottieRef);
+    console.log('💥 Lottie destroyed');
+
+  }
+
+
 }
