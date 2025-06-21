@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import {lazy} from './lib/functions/lazy.function';
+// import {lazy} from './lib/functions/lazy.function';
 
 export const routes: Routes = [
   {
