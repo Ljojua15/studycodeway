@@ -1,14 +1,14 @@
 export const ROUTES_HEADER_CONFIG = [
   {
     name: "Flexbox Exercises",
-    route: "#",
+    route: "/flex-box",
   },
   {
     name: "Grid Exercises",
-    route: "#",
+    route: "/grid",
   },
   {
     name: "Documentations",
-    route: "#",
+    route: "/documentations",
   }
 ]

@@ -10,11 +10,11 @@
       <div></div>
     </div>
     <div class="layouts-header__view" *ngIf="menuOpen">
-      <a (click)="toggleMenu()" *ngFor="let routes of headerRoutes " [href]="routes.route">{{routes.name}}</a>
+      <a (click)="toggleMenu()" *ngFor="let routes of headerRoutes "  [routerLink]="routes.route" >{{routes.name}}</a>
     </div>
   }@else{
     <div class="layouts-header__right">
-      <a *ngFor="let routes of headerRoutes " [href]="routes.route">{{routes.name}}</a>
+      <a *ngFor="let routes of headerRoutes "  [routerLink]="routes.route">{{routes.name}}</a>
     </div>
   }
 </div>

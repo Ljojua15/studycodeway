@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {isMobile} from '../../lib/functions/mobile.function';
 import {ROUTES_HEADER_CONFIG} from '../../lib/configs/routes.config';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'study-code-way-layouts-header',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './layouts-header.component.html',
   styleUrl: './layouts-header.component.scss'
 })
