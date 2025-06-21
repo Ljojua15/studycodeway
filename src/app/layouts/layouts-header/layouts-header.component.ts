@@ -21,5 +21,7 @@ export class LayoutsHeaderComponent {
     this.menuOpen = !this.menuOpen;
   }
 
+
+
   protected readonly isMobile = isMobile;
 }

@@ -9,6 +9,12 @@ export const routes: Routes = [
 
   },
   {
+    path: 'home',
+    loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent),
+    // loadComponent: lazy('./pages/home/home.component','.HomeComponent'),
+
+  },
+  {
     path: 'flex-box',
     loadComponent: () => import('./pages/flex-box/flex-box.component').then(m => m.FlexBoxComponent)
     // loadComponent: lazy('./pages/flex-box/flex-box.component', '.FlexBoxComponent')
