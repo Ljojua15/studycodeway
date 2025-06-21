@@ -25,7 +25,7 @@ export const routes: Routes = [
     // loadComponent: lazy('./pages/grid/grid.component', '.GridComponent')
   },
   {
-    path: 'documentation',
+    path: 'documentations',
     loadComponent: () => import('./pages/documentation/documentation.component').then(m => m.DocumentationComponent)
     // loadComponent: lazy('./pages/documentation/documentation.component', '.DocumentationComponent')
   },
