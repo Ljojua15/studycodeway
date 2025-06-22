@@ -4,12 +4,28 @@
     <p>Enhance your CSS skills through our interactive exercises and comprehensive documentation. Choose your learning path below.</p>
   </div>
   <div class="home__cards">
-    <div class="home__cards__all" *ngFor="let cards of [].constructor(3)">
-      <img src="" alt="*">
-      <h3></h3>
-      <h5></h5>
-      <button></button>
+    <div class="home__cards__all" *ngFor="let cards of cardsConfig">
+      <img [src]="cards.url" alt="*">
+      <h3>{{cards.headers}}</h3>
+      <h5>{{cards.text}}</h5>
+      <button>{{cards.buttons}}</button>
     </div>
   </div>
-  <div class="home__reading"></div>
+  <div class="home__reading">
+    <div class="home__reading__texts">
+      <div class="home__reading__texts--line">
+        გაიარე შენი გზა StudyCodeWay-ზე?
+      </div>
+      <div class="home__reading__texts--category">
+        <div *ngFor="let info of informationConfig">
+          <img [src]="info.url" alt="*">
+          <div>
+            <h3>{{info.headers}}</h3>
+            <h4>{{info.text}}</h4>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
