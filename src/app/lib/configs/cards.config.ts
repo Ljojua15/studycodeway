@@ -4,17 +4,20 @@ export const CARDS_CONFIG = [
     headers: 'Flexbox Exercises',
     text:'Master flexible box layouts with interactive challenges and real-time feedback.',
     buttons:'Start Learning',
+    link:'/flex-box'
   },
   {
     url: './assets/images/grid.png',
     headers: 'Grid Exercises',
     text:'Learn CSS Grid through hands-on exercises and visualize your grid layouts instantly.',
     buttons:'Start Learning',
+    link:'/grid'
   },
   {
     url: './assets/images/doc.png',
     headers: 'Documentation',
     text:'Comprehensive guides and references for CSS properties, selectors, and best practices.',
     buttons:'Explore Docs',
+    link:'/documentations'
   }
 ]

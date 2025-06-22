@@ -4,7 +4,7 @@
     <p>Enhance your CSS skills through our interactive exercises and comprehensive documentation. Choose your learning path below.</p>
   </div>
   <div class="home__cards">
-    <div class="home__cards__all" *ngFor="let cards of cardsConfig">
+    <div class="home__cards__all" *ngFor="let cards of cardsConfig" [routerLink]="cards.link" >
       <img [src]="cards.url" alt="*">
       <h3>{{cards.headers}}</h3>
       <h5>{{cards.text}}</h5>
@@ -17,14 +17,10 @@
         გაიარე შენი გზა StudyCodeWay-ზე?
       </div>
       <div class="home__reading__texts--category">
-        <div *ngFor="let info of informationConfig">
-          <img [src]="info.url" alt="*">
-          <div>
-            <h3>{{info.headers}}</h3>
-            <h4>{{info.text}}</h4>
-          </div>
-        </div>
+        <study-code-way-home-info *ngFor="let info of informationConfig" [info]="info" />
       </div>
+
+
 
     </div>
   </div>
