@@ -3,6 +3,7 @@
 
 .home-info{
   @include mixins.flex(center, space-between, column);
+  flex-direction: unset;
   flex-wrap: wrap;
   div{
     width: 50%;
@@ -30,6 +31,12 @@
         --tw-text-opacity: 1;
         color: rgb(156 163 175 / var(--tw-text-opacity, 1));
       }
+    }
+  }
+  @include mixins.mobile{
+    @include mixins.flex(center, space-between, column);
+    div{
+      width: 100%;
     }
   }
 }

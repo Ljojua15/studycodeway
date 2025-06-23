@@ -1,5 +1,5 @@
-<div class="home-info">
-  <div>
+<div class="home-info" >
+  <div *ngFor="let info of informationConfig">
     <img [src]="info.url" alt="*">
     <div>
       <h3>{{info.headers}}</h3>

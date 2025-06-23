@@ -8,7 +8,6 @@
   width: 100%;
   height: auto;
   @include mixins.flex(center, space-between, column);
-
   &__header {
     width: 100%;
     height: 20%;
@@ -30,7 +29,6 @@
       text-align: center;
     }
   }
-
   &__cards {
     width: 90%;
     @include mixins.flex(center, center, row);
@@ -75,7 +73,7 @@
         font-family: variables.$alk-font;
         font-size: 16px;
         font-weight: 500;
-        color: rgb(249 168 212 / var(--tw-text-opacity, 1));
+        color: whitesmoke;
         background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
       }
     }
@@ -92,7 +90,6 @@
       }
     }
   }
-
   &__reading {
     width: 100%;
     height: 30%;
@@ -114,43 +111,30 @@
         color: white;
 
       }
+    }
+  }
+  @include mixins.mobile{
+    &__cards {
+      @include mixins.flex(center, center, column);
 
+      &__all {
+        h5 {
+          width: 96%;
+        }
+      }
 
-        //&--category{
-      //  width: 100%;
-      //  height: 100%;
-      //  @include mixins.flex(center, space-between, column);
-      //  flex-direction: unset;
-      //  flex-wrap: wrap;
-      //  div{
-      //    width: 50%;
-      //    @include mixins.flex(center, center, row);
-      //    min-height: 150px;
-      //    img{
-      //      width: 50px;
-      //      height: 50px;
-      //      margin: 10px;
-      //    }
-      //    div{
-      //      width: 80%;
-      //      @include mixins.flex(center, center, column);
-      //      text-align: start;
-      //      gap: 10px;
-      //      h3{
-      //        font-size: 16px;
-      //        font-family: variables.$nino-font;
-      //        --tw-text-opacity: 1;
-      //        color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-      //      }
-      //      h4{
-      //        font-size: 14px;
-      //        font-family: variables.$alk-font;
-      //        --tw-text-opacity: 1;
-      //        color: rgb(156 163 175 / var(--tw-text-opacity, 1));
-      //      }
-      //    }
-      //  }
-      //}
+    }
+    &__reading {
+      width: 100%;
+      height: 30%;
+      @include mixins.flex(center, space-between, column);
+      padding: 30px;
+      &__texts{
+        &--line{
+          font-size: 18px;
+          margin-bottom: 30px;
+        }
+      }
     }
   }
 }

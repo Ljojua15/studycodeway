@@ -12,4 +12,17 @@
   gap: 4px;
   overflow-y: auto;
   overflow-x: hidden;
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #060a17;
+    border-radius: 16px;
+    margin: 20px 0 20px 0;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #d8dade;
+    border-radius: 16px;
+  }
+
 }
