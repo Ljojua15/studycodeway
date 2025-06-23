@@ -838,99 +838,99 @@ export const FLEX_CONFIG = {
       }
     ]
   },
+  // 10: {
+  //   texts: [
+  //     {
+  //       text: "დაეხმარე ხინკლებს თავიანთ ლანგრებთან მისვლაში. მიუხედავად იმისა, რომ ისინი ახლოს ჩანან, საჭიროა როგორც <strong>flex-direction</strong>, ისე <strong>justify-content</strong> მათი სწორად განლაგებისთვის."
+  //     },
+  //     {
+  //       text: "გაითვალისწინე, რომ როცა მიმართულებას შეაბრუნებ <b>row-reverse</b> ან <b>column-reverse</b> მნიშვნელობებით, <b>start</b> და <b>end</b> პოზიციებიც იცვლება."
+  //     }
+  //   ],
+  //   answers: [
+  //     {
+  //       flexDirection: "row-reverse",
+  //       justifyContent: "flex-end",
+  //     },
+  //   ],
+  //   heights: [
+  //     {
+  //       height: '90px'
+  //     }
+  //   ],
+  //   movingDivs: [
+  //     {
+  //       backgroundColor: "./assets/images/origin.svg",
+  //     },
+  //     {
+  //       backgroundColor: "./assets/images/pinki.svg",
+  //     },
+  //     {
+  //       backgroundColor: "./assets/images/green.svg",
+  //     },
+  //   ],
+  //   targetDivs: [
+  //     {
+  //       backgroundColor: "#ffe2e7",
+  //     },
+  //
+  //     {
+  //       backgroundColor: "#ff0000",
+  //     },
+  //     {
+  //       backgroundColor: "#00ff00",
+  //     },
+  //   ],
+  //   targetDivsStyle: [
+  //     {
+  //       flexDirection: "row-reverse",
+  //       justifyContent: "flex-end",
+  //     },
+  //   ],
+  //   codePlace: [
+  //     {
+  //       id: 1,
+  //       text: "#khinkali {",
+  //     },
+  //     {
+  //       id: 2,
+  //       text: "display: flex;",
+  //     },
+  //     {
+  //       id: 3,
+  //       text: "area",
+  //     },
+  //     {
+  //       id: 4,
+  //       text: "",
+  //     },
+  //     {
+  //       id: 5,
+  //       text: "",
+  //     },
+  //     {
+  //       id: 6,
+  //       text: "}",
+  //     },
+  //     {
+  //       id: 7,
+  //       text: "",
+  //     },
+  //     {
+  //       id: 8,
+  //       text: "",
+  //     },
+  //     {
+  //       id: 9,
+  //       text: "",
+  //     },
+  //     {
+  //       id: 10,
+  //       text: "",
+  //     }
+  //   ]
+  // },
   10: {
-    texts: [
-      {
-        text: "დაეხმარე ხინკლებს თავიანთ ლანგრებთან მისვლაში. მიუხედავად იმისა, რომ ისინი ახლოს ჩანან, საჭიროა როგორც <strong>flex-direction</strong>, ისე <strong>justify-content</strong> მათი სწორად განლაგებისთვის."
-      },
-      {
-        text: "გაითვალისწინე, რომ როცა მიმართულებას შეაბრუნებ <b>row-reverse</b> ან <b>column-reverse</b> მნიშვნელობებით, <b>start</b> და <b>end</b> პოზიციებიც იცვლება."
-      }
-    ],
-    answers: [
-      {
-        flexDirection: "row-reverse",
-        justifyContent: "flex-end",
-      },
-    ],
-    heights: [
-      {
-        height: '90px'
-      }
-    ],
-    movingDivs: [
-      {
-        backgroundColor: "./assets/images/origin.svg",
-      },
-      {
-        backgroundColor: "./assets/images/pinki.svg",
-      },
-      {
-        backgroundColor: "./assets/images/green.svg",
-      },
-    ],
-    targetDivs: [
-      {
-        backgroundColor: "#ffe2e7",
-      },
-
-      {
-        backgroundColor: "#ff0000",
-      },
-      {
-        backgroundColor: "#00ff00",
-      },
-    ],
-    targetDivsStyle: [
-      {
-        flexDirection: "row-reverse",
-        justifyContent: "flex-end",
-      },
-    ],
-    codePlace: [
-      {
-        id: 1,
-        text: "#khinkali {",
-      },
-      {
-        id: 2,
-        text: "display: flex;",
-      },
-      {
-        id: 3,
-        text: "area",
-      },
-      {
-        id: 4,
-        text: "",
-      },
-      {
-        id: 5,
-        text: "",
-      },
-      {
-        id: 6,
-        text: "}",
-      },
-      {
-        id: 7,
-        text: "",
-      },
-      {
-        id: 8,
-        text: "",
-      },
-      {
-        id: 9,
-        text: "",
-      },
-      {
-        id: 10,
-        text: "",
-      }
-    ]
-  },
-  11: {
     texts: [
       {
         text: "დაეხმარე ხინკლებს თავიანთ ლანგრებთან მისვლაში <strong>flex-direction</strong>-ისა და <strong>justify-content</strong>-ის გამოყენებით."
@@ -1022,7 +1022,7 @@ export const FLEX_CONFIG = {
       }
     ]
   },
-  12: {
+  11: {
     texts: [
       {
         text: "დაეხმარეთ ხინკლებს თავიანთ ლანგრებზე მოხვედრაში <strong>flex-direction</strong> და <strong>justify-content</strong> თვისებების გამოყენებით."
@@ -1111,7 +1111,7 @@ export const FLEX_CONFIG = {
       }
     ]
   },
-  13: {
+  12: {
     texts: [
       {
         text: "დაეხმარეთ ხინკლებს თავიანთ ლანგრებზე მოხვედრაში <strong>flex-direction</strong>, <strong>justify-content</strong> და <strong>align-items</strong> თვისებების გამოყენებით."
@@ -1202,138 +1202,138 @@ export const FLEX_CONFIG = {
       }
     ]
   },
-  14: {
-    texts: [
-      {
-        text: "ოჰ, არა! ყველა ხინკალი ერთ მწკრივ ლანგრებზე არის ჩაყუჟული. გაანაწილე ისინი <strong>flex-wrap</strong> თვისების გამოყენებით."
-      },
-      {
-        text: "<code>flex-wrap</code> იღებს შემდეგ მნიშვნელობებს:"
-      },
-      {
-        text: "<strong>nowrap</strong>: ყველა ელემენტი თავსდება ერთ ხაზზე."
-      },
-      {
-        text: "<strong>wrap</strong>: ელემენტები იტენება რამდენიმე ხაზზე საჭიროების მიხედვით."
-      },
-      {
-        text: "<strong>wrap-reverse</strong>: ელემენტები იტენება რამდენიმე ხაზზე უკუღმა მიმართულებით."
-      }
-    ],
-    answers: [
-      {
-        flexWrap:'wrap',
-        justifyContent:'center',
-      },
-    ],
-    heights: [
-      {
-        height: '90px'
-      }
-    ],
-    movingDivs: [
-      {
-        backgroundColor: "./assets/images/origin.svg",
-      },
-      {
-        backgroundColor: "./assets/images/green.svg",
-      },
-      {
-        backgroundColor: "./assets/images/green.svg",
-      },
-      {
-        backgroundColor: "./assets/images/green.svg",
-      },
-      {
-        backgroundColor: "./assets/images/green.svg",
-      },
-      {
-        backgroundColor: "./assets/images/green.svg",
-      },
-      {
-        backgroundColor: "./assets/images/pinki.svg",
-      },
-      {
-        backgroundColor: "./assets/images/pinki.svg",
-      },
-
-
-    ],
-    targetDivs: [
-      {
-        backgroundColor: "#ffe2e7",
-      },
-      {
-        backgroundColor: "#00ff00",
-      },
-      {
-        backgroundColor: "#00ff00",
-      },
-      {
-        backgroundColor: "#00ff00",
-      },
-      {
-        backgroundColor: "#00ff00",
-      },
-      {
-        backgroundColor: "#00ff00",
-      },
-      {
-        backgroundColor: "#ff0000",
-      },
-      {
-        backgroundColor: "#ff0000",
-      },
-
-    ],
-    targetDivsStyle: [
-      {
-        flexWrap:'wrap'
-      },
-    ],
-    codePlace: [
-      {
-        id: 1,
-        text: "#khinkali {",
-      },
-      {
-        id: 2,
-        text: "display: flex;",
-      },
-      {
-        id: 3,
-        text: "area",
-      },
-      {
-        id: 4,
-        text: "",
-      },
-      {
-        id: 5,
-        text: "",
-      },
-      {
-        id: 6,
-        text: "}",
-      },
-      {
-        id: 7,
-        text: "",
-      },
-      {
-        id: 8,
-        text: "",
-      },
-      {
-        id: 9,
-        text: "",
-      },
-      {
-        id: 10,
-        text: "",
-      }
-    ]
-  },
+  // 14: {
+  //   texts: [
+  //     {
+  //       text: "ოჰ, არა! ყველა ხინკალი ერთ მწკრივ ლანგრებზე არის ჩაყუჟული. გაანაწილე ისინი <strong>flex-wrap</strong> თვისების გამოყენებით."
+  //     },
+  //     {
+  //       text: "<code>flex-wrap</code> იღებს შემდეგ მნიშვნელობებს:"
+  //     },
+  //     {
+  //       text: "<strong>nowrap</strong>: ყველა ელემენტი თავსდება ერთ ხაზზე."
+  //     },
+  //     {
+  //       text: "<strong>wrap</strong>: ელემენტები იტენება რამდენიმე ხაზზე საჭიროების მიხედვით."
+  //     },
+  //     {
+  //       text: "<strong>wrap-reverse</strong>: ელემენტები იტენება რამდენიმე ხაზზე უკუღმა მიმართულებით."
+  //     }
+  //   ],
+  //   answers: [
+  //     {
+  //       flexWrap:'wrap',
+  //       justifyContent:'center',
+  //     },
+  //   ],
+  //   heights: [
+  //     {
+  //       height: '90px'
+  //     }
+  //   ],
+  //   movingDivs: [
+  //     {
+  //       backgroundColor: "./assets/images/origin.svg",
+  //     },
+  //     {
+  //       backgroundColor: "./assets/images/green.svg",
+  //     },
+  //     {
+  //       backgroundColor: "./assets/images/green.svg",
+  //     },
+  //     {
+  //       backgroundColor: "./assets/images/green.svg",
+  //     },
+  //     {
+  //       backgroundColor: "./assets/images/green.svg",
+  //     },
+  //     {
+  //       backgroundColor: "./assets/images/green.svg",
+  //     },
+  //     {
+  //       backgroundColor: "./assets/images/pinki.svg",
+  //     },
+  //     {
+  //       backgroundColor: "./assets/images/pinki.svg",
+  //     },
+  //
+  //
+  //   ],
+  //   targetDivs: [
+  //     {
+  //       backgroundColor: "#ffe2e7",
+  //     },
+  //     {
+  //       backgroundColor: "#00ff00",
+  //     },
+  //     {
+  //       backgroundColor: "#00ff00",
+  //     },
+  //     {
+  //       backgroundColor: "#00ff00",
+  //     },
+  //     {
+  //       backgroundColor: "#00ff00",
+  //     },
+  //     {
+  //       backgroundColor: "#00ff00",
+  //     },
+  //     {
+  //       backgroundColor: "#ff0000",
+  //     },
+  //     {
+  //       backgroundColor: "#ff0000",
+  //     },
+  //
+  //   ],
+  //   targetDivsStyle: [
+  //     {
+  //       flexWrap:'wrap'
+  //     },
+  //   ],
+  //   codePlace: [
+  //     {
+  //       id: 1,
+  //       text: "#khinkali {",
+  //     },
+  //     {
+  //       id: 2,
+  //       text: "display: flex;",
+  //     },
+  //     {
+  //       id: 3,
+  //       text: "area",
+  //     },
+  //     {
+  //       id: 4,
+  //       text: "",
+  //     },
+  //     {
+  //       id: 5,
+  //       text: "",
+  //     },
+  //     {
+  //       id: 6,
+  //       text: "}",
+  //     },
+  //     {
+  //       id: 7,
+  //       text: "",
+  //     },
+  //     {
+  //       id: 8,
+  //       text: "",
+  //     },
+  //     {
+  //       id: 9,
+  //       text: "",
+  //     },
+  //     {
+  //       id: 10,
+  //       text: "",
+  //     }
+  //   ]
+  // },
   // 15: {
   //   texts: [
   //     {
