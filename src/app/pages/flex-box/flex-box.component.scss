@@ -29,13 +29,13 @@
     @include mixins.flex(center,center,column);
     &__codding{
       width: calc(100% - 10px);
-      height: 50%;
+      height: auto;
 
 
     }
     &__result{
       width: calc(100% - 10px);
-      height: 50%;
+      height: auto;
     }
   }
 
