@@ -3,8 +3,13 @@
     <h2>Quick Reference Documentation</h2>
     <p>Comprehensive guides and quick references for web development technologies. Find what you need, when you need it.</p>
   </div>
-  <div class="documentation__technologies" *ngFor="let tech of [].constructor(4)">
-    <h3>header</h3>
-    <study-code-way-technologies *ngFor="let tech of [].constructor(4)" />
+  <div class="documentation__technologies" *ngFor="let tech of technologies">
+    <h3>{{ tech.header }}</h3>
+    <study-code-way-technologies *ngFor="let techno of tech.technics" [techno]="techno" (click)="soon()" />
+  </div>
+  <div class="documentation__soon" *ngIf="comeSoon" (click)="soon()">
+    <div>
+      <p>Coming Soon ...</p>
+    </div>
   </div>
 </div>

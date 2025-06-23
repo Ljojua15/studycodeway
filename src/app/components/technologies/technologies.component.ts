@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'study-code-way-technologies',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './technologies.component.scss'
 })
 export class TechnologiesComponent {
-
+@Input() techno: any;
 }

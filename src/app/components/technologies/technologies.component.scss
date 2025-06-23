@@ -3,23 +3,34 @@
 .technologies{
   width: 250px;
   height: 120px;
-  border: 1px solid black;
   border-radius: 20px;
   @include mixins.flex(flex-start, center, column);
   padding: 2px 20px;
   gap: 30px;
+  transform: translateY(0px) scale(1);
+  outline: none;
+  transition-duration: 300ms;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
   &__images{
     @include mixins.flex(center, center, row);
     gap: 20px;
     h3{
       font-size: 24px;
       font-family: variables.$main-font;
+      color: whitesmoke;
     }
   }
   &__text{
     p{
       font-size: 16px;
       font-weight: bold;
+      color: #d8dade;
     }
   }
+}
+.technologies:hover{
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 4px 8px 0 rgb(166, 166, 211), 0 6px 20px 0 rgb(62, 62, 172);
 }
