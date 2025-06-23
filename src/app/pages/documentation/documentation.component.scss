@@ -1,0 +1,44 @@
+@use 'assets/styles/variables.scss';
+@use 'assets/styles/mixins.scss';
+:host{
+  width: 100%;
+  height: 100%;
+}
+.documentation{
+  width: 100%;
+  height: 100%;
+  @include mixins.flex(center, flex-start, column);
+  &__header{
+    @include mixins.flex(center, center, column);
+    padding: 30px;
+    border: 1px solid red;
+    h2{
+      font-size: 30px;
+      margin-bottom: 10px;
+      color: #d8dade;
+      font-family: variables.$main-font;
+    }
+    p{
+      width: 80%;
+      font-size: 18px;
+      color: #d8dade;
+      text-align: center;
+      font-family: variables.$alk-font;
+    }
+  }
+  &__technologies{
+    border: 2px solid green;
+    @include mixins.flex(center, center, row);
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 100px 10px;
+    position: relative;
+    h3{
+      position: absolute;
+      left: 4%;
+      top: 10%;
+      font-size: 24px;
+      font-family: variables.$nino-font;
+    }
+  }
+}
