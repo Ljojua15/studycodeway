@@ -14,8 +14,7 @@
     width: calc(50% - 10px);
     height: 100%;
     margin: auto;
-    @include mixins.flex(center,space-between,column);
-
+    @include mixins.flex(center,center,column);
   }
   &__result{
     width: calc(50% - 10px);

@@ -11,27 +11,37 @@
   div{
     height: calc(100% - 10%);
     overflow-y: auto;
-    &::-webkit-scrollbar {  width: 6px;}&::-webkit-scrollbar-track {  background: #060a17;  border-radius: 16px;  margin: 50px 0 80px 0;}&::-webkit-scrollbar-thumb {  background: #4b4b4b;  border-radius: 16px;}
+    &::-webkit-scrollbar {
+      width: 6px;
+    }&::-webkit-scrollbar-track {
+           background: #060a17;
+           border-radius: 16px;
+           margin: 50px 0 80px 0;
+         }
+    &::-webkit-scrollbar-thumb {
+      background: #4b4b4b;
+      border-radius: 16px;
+    }
 
     ul{
       padding:20px;
       @include mixins.flex(flex-start,flex-start,column);
       gap: 10px;
       li{
-        font-family: sans-serif;
         line-height: 1.5;
+        color: white;
+        font-family: variables.$alk-font;
       }
     }
   }
 }
 
 ::ng-deep span b {
-  color: #ffe2e7;
-  font-weight: bold;
+  font-family: variables.$main-font;
+  color: #543b95;
 }
 ::ng-deep span strong {
-  color: green;
-  //cursor: pointer;
+  color: #f8ca15;
   font-weight: bold;
   text-decoration: underline;
   text-transform: uppercase;
