@@ -1,4 +1,4 @@
-<div class="technologies" style="background-color: {{techno.bgColor}}">
+<div class="technologies" [ngStyle]="{ 'background-color': techno.bgColor }">
   <div class="technologies__images" >
     <img [src]="techno.icon" alt="*">
     <h3>{{techno.title}}</h3>
