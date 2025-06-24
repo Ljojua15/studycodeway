@@ -2,6 +2,7 @@
 @use 'assets/styles/mixins.scss';
 
 .level-popup{
+  z-index: 200;
   width: 100%;
   height: 100%;
   @include mixins.flex(center, center, column);
@@ -20,7 +21,7 @@
       height: 30px;
       background-color: green;
       border: none;
-      border-radius: 10px;
+      border-radius: 20px;
       color: white;
       font-size: 18px;
       cursor: pointer;
