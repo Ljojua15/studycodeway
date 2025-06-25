@@ -1,1 +1,18 @@
-<p>game works!</p>
+<div class="game">
+  <div class="game__header">
+    <h2 class="game__title">ბაღი</h2>
+    <div class="game__level-info">
+      <span class="game__icon">🔥</span>
+      <span class="game__level-text">დონე: 1</span>
+    </div>
+  </div>
+
+  <div class="game__board">
+    <!-- 5x5 ბადე: საერთო 25 უჯრა -->
+    <div class="game__cell" *ngFor="let cell of grid; let i = index"
+         [class.game__cell--water]="i === waterIndex()"
+         [class.game__cell--plant]="i === plantIndex()">
+      <ng-container *ngIf="i === plantIndex()">🥕</ng-container>
+    </div>
+  </div>
+</div>
