@@ -1,5 +1,4 @@
 import {Injectable, } from '@angular/core';
-import {IStorage} from '../interface/storage.interface';
 
 @Injectable({
   providedIn: 'root'
