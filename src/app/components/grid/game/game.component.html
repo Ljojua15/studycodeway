@@ -8,7 +8,6 @@
   </div>
 
   <div class="game__board">
-    <!-- 5x5 ბადე: საერთო 25 უჯრა -->
     <div class="game__cell" *ngFor="let cell of grid; let i = index"
          [class.game__cell--water]="i === waterIndex()"
          [class.game__cell--plant]="i === plantIndex()">

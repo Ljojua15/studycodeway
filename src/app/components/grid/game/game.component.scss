@@ -15,14 +15,14 @@
 
   &__title {
     font-size: 22px;
-    color: #4ade80; // green-400
+    color: #4ade80;
   }
 
   &__level-info {
     display: flex;
     align-items: center;
     gap: 6px;
-    color: #e2e8f0; // slate-200
+    color: #e2e8f0;
     font-size: 14px;
   }
 
@@ -46,7 +46,7 @@
     justify-content: center;
 
     &--water {
-      background-color: #3b82f6; // blue-500
+      background-color: #3b82f6;
     }
 
     &--plant {

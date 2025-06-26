@@ -34,19 +34,20 @@ export class CoddingComponent implements OnInit {
     return this.coddingService.isCodeCorrect()
   })
 
-  public enterCode(direction: 'done'){
-  if(  this.flexService.$currentLevel$() < this.flexService.flexConfigLength){
-    const value = this.$code$().value
 
-    if (value) {
-      const data = this.localStorageService.getLocalStorage()
-      const newData = [...data, {id: this.flexService.$currentLevel$(), code: value}]
+  public enterCode(direction: 'done'): void {
+    if (this.flexService.$currentLevel$() < this.flexService.flexConfigLength) {
+      const value = this.$code$().value;
+      if (!value) return;
 
-      this.localStorageService.setLocalStorage(newData)
+      const currentLevel = this.flexService.$currentLevel$();
+      const data = this.localStorageService.getLocalStorage<any>('flex') || [];
+
+      const filteredData = data.filter((entry: { id: number; }) => entry.id !== currentLevel);
+      const newData = [...filteredData, { id: currentLevel, code: value }];
+
+      this.localStorageService.setLocalStorage('flex', newData);
+      this.coddingService.enterMyCode(direction);
     }
-
-    this.coddingService.enterMyCode(direction);
   }
-  }
-
 }

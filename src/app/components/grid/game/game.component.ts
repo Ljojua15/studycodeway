@@ -16,8 +16,8 @@ export class GameComponent {
   waterPosition = signal({ row: 1, col: 1 });
   plantPosition = signal({ row: 1, col: 3 });
 
-  // utility: row/col => index
   private getIndex(row: number, col: number): number {
+    console.log((row - 1) * this.cols + (col - 1))
     return (row - 1) * this.cols + (col - 1);
   }
 

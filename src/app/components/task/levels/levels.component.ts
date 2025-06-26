@@ -47,7 +47,10 @@ export class LevelsComponent implements AfterViewInit{
   }
 
   private reloadData() {
-    const data = this.localStorageService.getLocalStorage()
+    const data = this.localStorageService.getLocalStorage('flex');
+
+    if (!data || !Array.isArray(data)) return
+
     const currentLevel = data.find(d => d.id === this.flexService.$currentLevel$());
       this.flexService.$codeControl$().setValue(currentLevel?.code);
     }

@@ -25,10 +25,10 @@ export class LevelsModalComponent {
   })
 
   public changeLevelFromButton(id:number){
-    const data = this.localStorageService.getLocalStorage()
+    const data = this.localStorageService.getLocalStorage<any>('flex')
     this.$isLevelChanged$.set(true)
     this.flexService.$currentLevel$.set(id);
-    const currentLevel = data.find(d => d.id === id);
+    const currentLevel = data.find((d: { id: number; }) => d.id === id);
     this.flexService.$codeControl$().setValue(currentLevel?.code);
   }
 
