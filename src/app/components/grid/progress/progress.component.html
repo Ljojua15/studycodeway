@@ -1,22 +1,24 @@
-<div class="progress">
-  <div class="progress__header">
-    <h2 class="progress__title">Წარმატება</h2>
-    <p class="progress__subtitle">შენი წინსვლა Grid Garden-ში</p>
+<div class="progress-box">
+  <h2 class="progress-box__title">Progress</h2>
+
+  <div class="progress-box__status">
+    <span>Completed Levels</span>
+    <span>{{ solved }}/{{ total }}</span>
   </div>
 
-  <div class="progress__levels">
-    <!-- მაგალითისთვის 12 ლეველი -->
-    <div class="progress__level progress__level--passed">1</div>
-    <div class="progress__level progress__level--passed">2</div>
-    <div class="progress__level progress__level--passed">3</div>
-    <div class="progress__level progress__level--current">4</div>
-    <div class="progress__level">5</div>
-    <div class="progress__level">6</div>
-    <div class="progress__level">7</div>
-    <div class="progress__level">8</div>
-    <div class="progress__level">9</div>
-    <div class="progress__level">10</div>
-    <div class="progress__level">11</div>
-    <div class="progress__level">12</div>
+  <div class="progress-box__stats">
+    <div class="progress-box__card">
+      <div class="progress-box__icon text-primary">
+        <i class="ri-number-{{ solved }}"></i>
+      </div>
+      <span class="progress-box__label">Solved</span>
+    </div>
+
+    <div class="progress-box__card">
+      <div class="progress-box__icon text-secondary">
+        <i class="ri-number-{{ currentLevel }}"></i>
+      </div>
+      <span class="progress-box__label">Level</span>
+    </div>
   </div>
 </div>

@@ -1,6 +1,6 @@
 import {gridLevels} from '../interface/grid.interface';
 
-export const levels: gridLevels[] = [
+export const GRID_CONFIG: gridLevels[] = [
   {
     id: 1,
     title: "მცენარის მორწყვა",

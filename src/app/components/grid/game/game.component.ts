@@ -17,7 +17,6 @@ export class GameComponent {
   plantPosition = signal({ row: 1, col: 3 });
 
   private getIndex(row: number, col: number): number {
-    console.log((row - 1) * this.cols + (col - 1))
     return (row - 1) * this.cols + (col - 1);
   }
 
@@ -28,4 +27,18 @@ export class GameComponent {
   plantIndex = computed(() =>
     this.getIndex(this.plantPosition().row, this.plantPosition().col)
   );
+  currentLevel = 0;
+
+
+
+  changeLevel(direction: 'prev' | 'next'): void {
+    if (direction === 'prev' && this.currentLevel > 0) {
+      this.currentLevel--;
+    }
+
+    if (direction === 'next' && this.currentLevel < 12 - 1) {
+      this.currentLevel++;
+    }
+  }
+
 }

@@ -1,16 +1,43 @@
+<!--<div class="game">-->
+<!--  <div class="game__header">-->
+<!--    <h2 class="game__title">ბაღი</h2>-->
+<!--    <div class="game__level-info">-->
+<!--      <span class="game__icon">🔥</span>-->
+<!--      <span class="game__level-text">დონე: 1</span>-->
+<!--    </div>-->
+<!--  </div>-->
+
+<!--  <div class="game__board">-->
+<!--    <div class="game__cell" *ngFor="let cell of grid; let i = index"-->
+<!--         [class.game__cell&#45;&#45;water]="i === waterIndex()"-->
+<!--         [class.game__cell&#45;&#45;plant]="i === plantIndex()">-->
+<!--      <ng-container *ngIf="i === plantIndex()">🥕</ng-container>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
 <div class="game">
   <div class="game__header">
     <h2 class="game__title">ბაღი</h2>
     <div class="game__level-info">
       <span class="game__icon">🔥</span>
-      <span class="game__level-text">დონე: 1</span>
+      <span class="game__level-text">დონე: {{ currentLevel + 1 }}</span>
     </div>
   </div>
 
+  <!-- ახალი დონეების გადამრთველი ბარი -->
+  <div class="game__level-switcher">
+    <button class="game__arrow" (click)="changeLevel('prev')">←</button>
+    <span class="game__level-number">{{ currentLevel + 1 }}</span>
+    <button class="game__arrow" (click)="changeLevel('next')">→</button>
+  </div>
+
   <div class="game__board">
-    <div class="game__cell" *ngFor="let cell of grid; let i = index"
-         [class.game__cell--water]="i === waterIndex()"
-         [class.game__cell--plant]="i === plantIndex()">
+    <div
+      class="game__cell"
+      *ngFor="let cell of grid; let i = index"
+      [class.game__cell--water]="i === waterIndex()"
+      [class.game__cell--plant]="i === plantIndex()"
+    >
       <ng-container *ngIf="i === plantIndex()">🥕</ng-container>
     </div>
   </div>
